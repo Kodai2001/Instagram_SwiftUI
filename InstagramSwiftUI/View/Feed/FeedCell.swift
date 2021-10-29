@@ -24,6 +24,7 @@ struct FeedCell: View {
                                   weight: .semibold
                     ))
             }
+            .padding([.leading, .bottom], 8)
             
             // post image
             Image("jackDorsey")
@@ -32,43 +33,54 @@ struct FeedCell: View {
                 .frame(maxHeight: 440)
             
             // action button
-            HStack(spacing: 8){
+            HStack(spacing: 16){
                 Button(action: {}, label: {
                     Image(systemName: "heart")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 28, height: 28)
+                        .frame(width: 20, height: 20)
                         .font(.system(size: 20))
-                }).padding(4)
+                        .padding(4)
+                })
                 
                 Button(action: {}, label: {
                     Image(systemName: "bubble.right")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 28, height: 28)
+                        .frame(width: 20, height: 20)
                         .font(.system(size: 20))
-                }).padding(4)
+                        .padding(4)
+                })
                 
                 Button(action: {}, label: {
                     Image(systemName: "paperplane")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 28, height: 28)
+                        .frame(width: 20, height: 20)
                         .font(.system(size: 20))
-                }).padding(4)
-            }.foregroundColor(.black)
+                        .padding(4)
+                })
+                
+            }
+            .padding(.leading, 4)
+            .foregroundColor(.black)
             
             // caption
+            Text("200 likes")
+                .font(.system(size: 14, weight: .semibold))
+                .padding(.leading, 8)
+            
             HStack{
                 Text("Jack Dorsey").font(.system(size: 14, weight: .semibold)) +
                 Text("  Expect the unexpected. And whenever possible, be the unexpected.").font(.system(size: 15))
             }
+            .padding(.horizontal, 8)
             
             Text("2d")
                 .font(.system(size: 14))
                 .foregroundColor(.gray)
-                .padding(.top)
-            
+                .padding([.leading, .top], 8)
+                .padding(.top, -2)
         }
     }
 }
@@ -76,5 +88,6 @@ struct FeedCell: View {
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View {
         FeedCell()
+            .previewDevice("iPhone 12")
     }
 }
