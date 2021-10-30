@@ -24,6 +24,8 @@
 		88834961272D188800C74FD6 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88834960272D188800C74FD6 /* UserCell.swift */; };
 		88834963272D189100C74FD6 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88834962272D189100C74FD6 /* UserListView.swift */; };
 		88834965272D248D00C74FD6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88834964272D248D00C74FD6 /* Extensions.swift */; };
+		88834967272D2B4500C74FD6 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88834966272D2B4500C74FD6 /* NotificationCell.swift */; };
+		88834969272D3D3A00C74FD6 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88834968272D3D3A00C74FD6 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		88834960272D188800C74FD6 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		88834962272D189100C74FD6 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		88834964272D248D00C74FD6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		88834966272D2B4500C74FD6 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		88834968272D3D3A00C74FD6 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				8883494F272B683300C74FD6 /* ProfileView.swift */,
+				88834968272D3D3A00C74FD6 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				88834957272B687E00C74FD6 /* NotificationView.swift */,
+				88834966272D2B4500C74FD6 /* NotificationCell.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -326,10 +332,12 @@
 				88834961272D188800C74FD6 /* UserCell.swift in Sources */,
 				8883495B272B6F6400C74FD6 /* FeedCell.swift in Sources */,
 				8883494C272B680900C74FD6 /* UploadPostView.swift in Sources */,
+				88834969272D3D3A00C74FD6 /* ProfileHeaderView.swift in Sources */,
 				88834950272B683300C74FD6 /* ProfileView.swift in Sources */,
 				88834920272B629C00C74FD6 /* InstagramSwiftUIApp.swift in Sources */,
 				88834956272B686B00C74FD6 /* SearchView.swift in Sources */,
 				88834952272B683D00C74FD6 /* FeedView.swift in Sources */,
+				88834967272D2B4500C74FD6 /* NotificationCell.swift in Sources */,
 				88834947272B672F00C74FD6 /* MainTabView.swift in Sources */,
 				8883495F272D155D00C74FD6 /* PostGridView.swift in Sources */,
 				88834965272D248D00C74FD6 /* Extensions.swift in Sources */,
