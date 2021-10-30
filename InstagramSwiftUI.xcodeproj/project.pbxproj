@@ -19,6 +19,7 @@
 		88834956272B686B00C74FD6 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88834955272B686B00C74FD6 /* SearchView.swift */; };
 		88834958272B687E00C74FD6 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88834957272B687E00C74FD6 /* NotificationView.swift */; };
 		8883495B272B6F6400C74FD6 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883495A272B6F6400C74FD6 /* FeedCell.swift */; };
+		8883495D272CDBD100C74FD6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883495C272CDBD000C74FD6 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		88834955272B686B00C74FD6 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		88834957272B687E00C74FD6 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationView.swift; path = InstagramSwiftUI/View/Search/NotificationView.swift; sourceTree = SOURCE_ROOT; };
 		8883495A272B6F6400C74FD6 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		8883495C272CDBD000C74FD6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				88834955272B686B00C74FD6 /* SearchView.swift */,
+				8883495C272CDBD000C74FD6 /* SearchBar.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				88834952272B683D00C74FD6 /* FeedView.swift in Sources */,
 				88834947272B672F00C74FD6 /* MainTabView.swift in Sources */,
 				88834954272B685700C74FD6 /* CommentsView.swift in Sources */,
+				8883495D272CDBD100C74FD6 /* SearchBar.swift in Sources */,
 				88834958272B687E00C74FD6 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
