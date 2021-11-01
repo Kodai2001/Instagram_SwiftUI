@@ -16,6 +16,8 @@ struct RegistrationView: View {
     @State private var selectedImage: UIImage?
     @State private var image: Image?
     @State var imagePickerPresented = false
+    @EnvironmentObject var viewModel: AuthViewModel
+
     
     
     var body: some View {
@@ -78,7 +80,9 @@ struct RegistrationView: View {
                 }
                 
                 // sign in
-                Button(action: {}, label: {
+                Button(action: {
+                    viewModel.register(withEmail: email, password: password, image: selectedImage, fullname: fullname, username: username)
+                }, label: {
                     Text("Sign Up")
                         .font(.headline)
                         .foregroundColor(.white)

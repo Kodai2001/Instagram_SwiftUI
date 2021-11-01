@@ -6,13 +6,19 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct InstagramSwiftUIApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            //ContentView()
-            LoginView()
+            ContentView().environmentObject(AuthViewModel.shared)
+            
         }
     }
 }
