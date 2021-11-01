@@ -19,31 +19,25 @@ struct ProfileHeaderView: View {
                 Spacer()
                 
                 HStack(spacing: 16) {
-                    UserStatView()
-                    UserStatView()
-                    UserStatView()
+                    UserStatView(value: 1, title: "Posts")
+                    UserStatView(value: 2, title: "Followers")
+                    UserStatView(value: 4, title: "Following")
                 }.padding(.trailing, 32)
             }.padding(.leading)
             Text("Endo Sakura")
                 .font(.system(size: 15, weight: .semibold))
                 .padding([.leading, .top])
             
-            Text("I am a member of Nogizaka46, one of the most famous idol group in Japan.")
+            Text("I am a member of Nogizaka46, one of the most famous idol groups in Japan.")
                 .font(.system(size: 15))
                 .padding(.leading)
                 .padding(.top, 1)
             
             HStack {
                 Spacer()
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Edit Profile")
-                        .font(.system(size: 14, weight: .semibold))
-                        .frame(width: 360, height: 32)
-                        .foregroundColor(.black)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 3)
-                                .stroke(Color.gray, lineWidth: /*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/))
-                })
+                
+                ProfileActionButtonView()
+                
                 Spacer()
             }.padding(.top)
             
@@ -51,17 +45,7 @@ struct ProfileHeaderView: View {
     }
 }
 
-struct UserStatView: View {
-    var body: some View {
-        VStack {
-            Text("2")
-                .font(.system(size: 15, weight: .semibold))
-            
-            Text("Followers")
-                .font(.system(size: 15))
-        }.frame(width: 80, alignment: .center)
-    }
-}
+
 
 struct ProfileHeaderView_Previews: PreviewProvider {
     static var previews: some View {
