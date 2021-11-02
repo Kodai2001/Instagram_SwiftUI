@@ -11,6 +11,9 @@ struct UploadPostView: View {
     @State var postImage: Image?
     @State var captionText = ""
     @State var imagePickerPresented = false
+    @Binding var tabIndex: Int
+    
+    @ObservedObject var viewModel = UploadPostViewModel()
     
     var body: some View {
         VStack {
@@ -34,10 +37,19 @@ struct UploadPostView: View {
                         .frame(width: 96, height: 96)
                         .clipped()
                     
-                    TextField("Enter your caption...", text: $captionText)
+                    TextArea(text: $captionText, placeholder: "Enter your caption..")
+                        .frame(height: 200)
                 }.padding()
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    if let image = selectedImage {
+                        viewModel.uplaodPost(caption: captionText, image: image) { _ in
+                            captionText = ""
+                            postImage = nil
+                            tabIndex = 0
+                        }
+                    }
+                }, label: {
                     Text("Share")
                         .font(.system(size: 16, weight: .semibold))
                         .frame(width: 360, height: 50)
@@ -60,8 +72,3 @@ extension UploadPostView {
     }
 }
 
-struct UploadPostView_Previews: PreviewProvider {
-    static var previews: some View {
-        UploadPostView()
-    }
-}
